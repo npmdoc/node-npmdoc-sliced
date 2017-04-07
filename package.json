@@ -1,17 +1,40 @@
 {
-    "buildNpmdoc":"sliced",
+    "author": "kai zhu <kaizhu256@gmail.com>",
+    "buildNpmdoc": "sliced",
+    "description": "api documentation for [sliced (v1.0.1)](https://github.com/aheckmann/sliced) [![npm package](https://img.shields.io/npm/v/npmdoc-sliced.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sliced) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sliced.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sliced)",
     "devDependencies": {
-        "sliced": "*",
         "electron-lite": "kaizhu256/node-electron-lite#alpha",
+        "sliced": "*",
         "utility2": "kaizhu256/node-utility2#alpha"
     },
-    "name":"npmdoc-sliced",
+    "engines": {
+        "node": ">=4.0"
+    },
+    "homepage": "https://github.com/npmdoc/node-npmdoc-sliced",
+    "keywords": [
+        "documentation",
+        "sliced"
+    ],
+    "license": "MIT",
+    "main": "lib.npmdoc_sliced.js",
+    "name": "npmdoc-sliced",
+    "nameAlias": "npmdoc_sliced",
+    "nameOriginal": "npmdoc-sliced",
+    "os": [
+        "darwin",
+        "linux"
+    ],
     "repository": {
         "type": "git",
         "url": "https://github.com/npmdoc/node-npmdoc-sliced"
     },
     "scripts": {
-        "build-ci": "utility2 shReadmeTest build_ci.sh"
+        "build-ci": "utility2 shReadmeTest build_ci.sh",
+        "env": "env",
+        "heroku-postbuild": "(set -e; npm install \"kaizhu256/node-utility2#alpha\"; utility2 shDeployHeroku)",
+        "postinstall": "if [ -f npm_scripts.sh ]; then ./npm_scripts.sh postinstall; fi",
+        "start": "(set -e; export PORT=${PORT:-8080}; utility2 start test.js)",
+        "test": "(set -e; export PORT=$(utility2 shServerPortRandom); utility2 test test.js)"
     },
     "version": "0.0.1"
 }
