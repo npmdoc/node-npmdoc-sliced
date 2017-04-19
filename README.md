@@ -1,9 +1,14 @@
-# api documentation for  [sliced (v1.0.1)](https://github.com/aheckmann/sliced)  [![npm package](https://img.shields.io/npm/v/npmdoc-sliced.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sliced) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sliced.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sliced)
+# npmdoc-sliced
+
+#### api documentation for  [sliced (v1.0.1)](https://github.com/aheckmann/sliced)  [![npm package](https://img.shields.io/npm/v/npmdoc-sliced.svg?style=flat-square)](https://www.npmjs.org/package/npmdoc-sliced) [![travis-ci.org build-status](https://api.travis-ci.org/npmdoc/node-npmdoc-sliced.svg)](https://travis-ci.org/npmdoc/node-npmdoc-sliced)
+
 #### A faster Node.js alternative to Array.prototype.slice.call(arguments)
 
-[![NPM](https://nodei.co/npm/sliced.png?downloads=true)](https://www.npmjs.com/package/sliced)
+[![NPM](https://nodei.co/npm/sliced.png?downloads=true&downloadRank=true&stars=true)](https://www.npmjs.com/package/sliced)
 
-[![apidoc](https://npmdoc.github.io/node-npmdoc-sliced/build/screenCapture.buildNpmdoc.browser._2Fhome_2Ftravis_2Fbuild_2Fnpmdoc_2Fnode-npmdoc-sliced_2Ftmp_2Fbuild_2Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sliced/build/apidoc.html)
+- [https://npmdoc.github.io/node-npmdoc-sliced/build/apidoc.html](https://npmdoc.github.io/node-npmdoc-sliced/build/apidoc.html)
+
+[![apidoc](https://npmdoc.github.io/node-npmdoc-sliced/build/screenCapture.buildCi.browser.%252Ftmp%252Fbuild%252Fapidoc.html.png)](https://npmdoc.github.io/node-npmdoc-sliced/build/apidoc.html)
 
 ![npmPackageListing](https://npmdoc.github.io/node-npmdoc-sliced/build/screenCapture.npmPackageListing.svg)
 
@@ -17,8 +22,7 @@
 
 {
     "author": {
-        "name": "Aaron Heckmann",
-        "email": "aaron.heckmann+github@gmail.com"
+        "name": "Aaron Heckmann"
     },
     "bugs": {
         "url": "https://github.com/aheckmann/sliced/issues"
@@ -50,13 +54,11 @@
     "main": "index.js",
     "maintainers": [
         {
-            "name": "aaron",
-            "email": "aaron.heckmann+github@gmail.com"
+            "name": "aaron"
         }
     ],
     "name": "sliced",
     "optionalDependencies": {},
-    "readme": "ERROR: No README data found!",
     "repository": {
         "type": "git",
         "url": "git://github.com/aheckmann/sliced.git"
@@ -67,16 +69,6 @@
     "version": "1.0.1"
 }
 ```
-
-
-
-# <a name="apidoc.tableOfContents"></a>[table of contents](#apidoc.tableOfContents)
-
-#### [module sliced](#apidoc.module.sliced)
-
-
-
-# <a name="apidoc.module.sliced"></a>[module sliced](#apidoc.module.sliced)
 
 
 
