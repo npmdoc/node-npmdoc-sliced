@@ -54,12 +54,55 @@
 
     <li class="apidocModuleLi"><a href="#apidoc.module.sliced">module sliced</a><ol>
 
+        <li>
+
+            <a class="apidocElementLiA" href="#apidoc.element.sliced.sliced">
+            function <span class="apidocSignatureSpan"></span>sliced
+            <span class="apidocSignatureSpan">(args, slice, sliceEnd)</span>
+            </a>
+
+        </li>
+
     </ol></li>
 
 </ol></div>
 
 <div class="apidocSectionDiv">
 <h1><a href="#apidoc.module.sliced" id="apidoc.module.sliced">module sliced</a></h1>
+
+
+    <h2>
+        <a href="#apidoc.element.sliced.sliced" id="apidoc.element.sliced.sliced">
+        function <span class="apidocSignatureSpan"></span>sliced
+        <span class="apidocSignatureSpan">(args, slice, sliceEnd)</span>
+        </a>
+    </h2>
+    <ul>
+    <li>description and source-code<pre class="apidocCodePre">sliced = function (args, slice, sliceEnd) {
+  var ret = [];
+  var len = args.length;
+
+  if (0 === len) return ret;
+
+  var start = slice &lt; 0
+    ? Math.max(0, slice + len)
+    : slice || 0;
+
+  if (sliceEnd !== undefined) {
+    len = sliceEnd &lt; 0
+      ? sliceEnd + len
+      : sliceEnd
+  }
+
+  while (len-- &gt; start) {
+    ret[len - start] = args[len];
+  }
+
+  return ret;
+}</pre></li>
+    <li>example usage<pre class="apidocCodePre">n/a</pre></li>
+    </ul>
+
 
 </div>
 
